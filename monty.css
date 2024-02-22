@@ -1,0 +1,81 @@
+
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background: linear-gradient(454deg, #4f4080, #9553ff);
+}
+
+#rules{
+    color: red;
+    text-decoration:underline; 
+}
+
+#simulation_exp{
+    text-align: left;
+}
+
+#Title{
+    color: orange;
+}
+
+#simulation{
+    text-align: left;
+}
+
+#title{
+    color: orange;
+}
+
+#Winning_rate{
+    color: orange;
+}
+
+#button{
+    margin-left: 300px;
+    cursor: pointer; /* Makes the span look clickable */
+    /* Additional styles for visual feedback */
+    color: orange; /* Optional: Change color to indicate interactivity */
+    text-decoration: underline; /* Optional: Underline text to resemble a link */
+}
+
+#doors {
+    width: 1101px; 
+    height: 600px; 
+
+    margin: 0 auto; 
+    display: flex; 
+    flex-wrap: wrap; 
+
+    background: url(./money.png); 
+    background-size: cover; 
+    border: 3px solid green; 
+    border-radius: 25px;
+    background-position: center -100px; 
+}
+
+#doors div {
+    width: 367px; /* Door width */
+    height: 800px; /* Door height */
+    background-image: url(./door.png);
+    background-size: 100% auto; /* Cover the width of the div, adjust height automatically */
+    background-position: center 50px; /* Center horizontally, adjust vertically */
+    background-repeat: no-repeat; /* Do not repeat the background */
+    position: relative; /* Set position relative for absolute positioning of child img */
+}
+
+#doors div img {
+    width: 100%; /* Adjust width to fit within the door */
+    height: 100; /* Maintain aspect ratio */
+    object-fit: cover; /* Ensures the image covers the area without distorting the aspect ratio */
+    position: absolute; /* Absolute position within the door div */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -79%); /* Adjust position to truly center */
+
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
